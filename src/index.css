@@ -6,6 +6,16 @@
 
 body {
     background-color: #001524;
-    font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffecd1;
+}
+
+.icon {
+    @apply text-2xl cursor-pointer
+}
+
+@layer base {
+    li {
+        @apply p-2 text-center font-semibold text-[#ffecd1] px-3
+    }    
 }
