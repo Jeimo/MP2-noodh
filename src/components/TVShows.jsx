@@ -24,8 +24,8 @@ const TVShows = () => {
                     <h1 className='text-3xl md:text-5xl font-bold'>{show?.name}</h1>
                     <p className='text-sm pt-3'>First Air: {show?.first_air_date}</p>
                     <div className='my-4'>
-                        <button className='bg-teal-600 text-black border-gray-300 py-2 px-5 rounded'>Play</button>
-                        <button className='border border-gray-300 py-2 px-5 ml-4 rounded'>Watch Later</button>
+                        <button className='bg-teal-600 text-black border-gray-300 py-2 px-5 rounded hover:bg-transparent hover:text-[#ffecd1] hover:border duration-300'>Play</button>
+                        <button className='border border-gray-300 py-2 px-5 ml-4 rounded hover:bg-teal-600 hover:border-none duration-300 hover:text-[#001524]'>Watch Later</button>
                     </div>
                     
                     <p className='w-full md:max-w-[70%] lg:max-w-[50%] xl:[35%]'>{show?.overview}</p>

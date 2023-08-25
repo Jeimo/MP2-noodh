@@ -6,6 +6,7 @@ const requests = {
     reqUpcoming: `https://api.themoviedb.org/3/movie/upcoming?api_key=${key}`,
     reqNowPlaying: `https://api.themoviedb.org/3/movie/now_playing?api_key=${key}`,
     reqMovies: `https://api.themoviedb.org/3/search/movie?api_key=${key}`,
+    reqPerson: `https://api.themoviedb.org/3/trending/person/day?api_key=${key}`,
 }
 
 export default requests

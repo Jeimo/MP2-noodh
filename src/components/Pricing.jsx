@@ -3,7 +3,6 @@ import PricingPlans from './PricingPlans';
 
 const PricingPage = () => {
     const pricingOptions = [
-        
         {
         title: 'Basic Plan',
         price: 'PHP249',

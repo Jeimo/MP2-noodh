@@ -13,19 +13,19 @@ const Navbar = () => {
         setLogo(!logo)
     }
 
+
     return (
         <div className='flex items-certer justify-between p-4 z-[100] w-full absolute'>
             <Link to='/'><h1 className='text-4xl font-bold cursor-pointer'>noödh.</h1></Link>
             <ul className='hidden lg:flex'>
-                <Link to='/'><li  className='hover:bg-[#ffecd1] hover:text-[#001524] rounded'>Home</li></Link>
+                <Link to='/'><li className='hover:bg-[#ffecd1] hover:text-[#001524] rounded'>Home</li></Link>
                 <Link to='/movies'><li className='hover:bg-[#ffecd1] hover:text-[#001524] rounded'>Movies</li></Link>
                 <Link to='/tv'><li className='hover:bg-[#ffecd1] hover:text-[#001524] rounded'>TV Shows</li></Link>
                 <Link to='/search'><li className='hover:bg-[#ffecd1] hover:text-[#001524] rounded'>Search</li></Link>
-                <li className='hover:bg-[#ffecd1] hover:text-[#001524] rounded'>Browse by Genre</li>
             </ul>
             <div className='hidden md:flex'>
-                <button className='mr-4 px-4 border rounded'>Sign In</button>
-                <button className='bg-teal-600 px-6 py-2 rounded cursor-pointer'>Sign Up</button>
+                <Link to='/login'><button className='mr-4 px-4 border rounded h-10'>Sign In</button></Link>
+                <Link to='/signup'><button className='bg-teal-600 px-6 py-2 rounded cursor-pointer'>Sign Up</button></Link>
             </div>
             {/* Hamburger */}
             <div className='md:hidden z-10' onClick={handleNav}>
@@ -36,15 +36,14 @@ const Navbar = () => {
             <div className={nav ? 'absolute text-black left-0 top-0 w-full md:w-[400px] lg:w-[600px] h-screen bg-[#001524]/80 px-4 py-7 flex flex-col' : 'absolute left-[-100%]'} onClick={handleNav}>
                 <h1 className='text-4xl font-bold cursor-pointer pb-5 text-[#ffecd1]'>noödh.</h1>
                 <ul>
-                    <li className='border-b py-7 hover:bg-[#ffecd1] hover:text-[#001524] rounded'>Home</li>
-                    <li className='border-b py-7 hover:bg-[#ffecd1] hover:text-[#001524] rounded'>Movies</li>
-                    <li className='border-b py-7 hover:bg-[#ffecd1] hover:text-[#001524] rounded'>TV Shows</li>
-                    <li className='border-b py-7 hover:bg-[#ffecd1] hover:text-[#001524] rounded'>Search</li>
-                    <li className='border-b py-7 hover:bg-[#ffecd1] hover:text-[#001524] rounded'>Browse by Genre</li>
+                    <Link to='/'><li className='border-b py-7 hover:bg-[#ffecd1] hover:text-[#001524] rounded'>Home</li></Link>
+                    <Link to='/movies'><li className='border-b py-7 hover:bg-[#ffecd1] hover:text-[#001524] rounded'>Movies</li></Link>
+                    <Link to='/tv'><li className='border-b py-7 hover:bg-[#ffecd1] hover:text-[#001524] rounded'>TV Shows</li></Link>
+                    <Link to='/search'><li className='border-b py-7 hover:bg-[#ffecd1] hover:text-[#001524] rounded mb-[150px]'>Search</li></Link>
 
-                    <div className='flex flex-col py-10'>
-                        <button className='bg-[#ffecd1] text-[#001524] font-bold text-lg px-6 py-2 rounded cursor-pointer mb-5'>Sign In</button>
-                        <button className='bg-[#ffecd1] text-[#001524] font-bold text-lg px-6 py-2 rounded cursor-pointer'>Sign Up</button>
+                    <div className='flex py-8 justify-around'>
+                        <Link to='/login'><button className='bg-[#ffecd1] text-[#001524] font-bold text-lg px-6 py-2 rounded cursor-pointer mb-5 hover:bg-teal-600'>Sign In</button></Link>
+                        <Link to='/signup'><button className='bg-[#ffecd1] text-[#001524] font-bold text-lg px-6 py-2 rounded cursor-pointer hover:bg-teal-600'>Sign Up</button></Link>
                     </div>
                     <div className='flex justify-between my-3'>
                         <FaFacebook className='icon text-[#ffecd1]'/>

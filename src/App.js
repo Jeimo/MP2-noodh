@@ -4,8 +4,10 @@ import Moviepage from "./pages/Moviepage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import TVPage from "./pages/TVPage";
-// import SearchResult from "./pages/SearchResult"
 import SearchPage from "./pages/SearchPage";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
+import Authenticate from "./components/Authenticate";
 
 export default function App() {
   return (
@@ -14,9 +16,23 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/movies' element={<Moviepage />} />
-          <Route path='/tv' element={<TVPage />} />
-          <Route path='/search' element={<SearchPage />} />
+          <Route path='/movies' element={
+              <Authenticate>
+                <Moviepage />
+              </Authenticate>
+          }/>
+          <Route path='/tv' element={
+              <Authenticate>
+                <TVPage />
+              </Authenticate>
+          }/>
+          <Route path='/search' element={
+              <Authenticate>
+                <SearchPage />
+              </Authenticate>
+          }/>
+          <Route path='/login' element={<LoginPage />} />
+          <Route path='/signup' element={<SignupPage />} />
         </Routes>
       </div>
         <Footer />

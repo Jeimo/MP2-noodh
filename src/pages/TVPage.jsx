@@ -10,9 +10,8 @@ const TVPage = () => {
         <div>
             <TVShows />
             <TVRow rowID='5' title='Airing Now' fetchURL={TVrequests.reqTVTrending} />
-            <TVRow rowID='6' title='Ongoing Shows' fetchURL={TVrequests.reqOnTheAir} />
+            <TVRow rowID='6' title='Top Rated' fetchURL={TVrequests.reqTVTopRated} />
             <TVRow rowID='7' title='Popular' fetchURL={TVrequests.reqTVPopular} />
-            <TVRow rowID='8' title='Upcoming' fetchURL={TVrequests.reqAiring} />
         </div>
     )
 }

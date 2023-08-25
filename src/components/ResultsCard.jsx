@@ -11,16 +11,16 @@ const ResultsCard = ({movie}) => {
                         <div className='filler-poster'></div>
                     )}
                 </div>
-                <div className='info sm:w-[300px] md:w-[400px] bg-[#ffecd1] rounded-x rounded-b'>
-                    <div className='header ml-5'>
-                        <h3 className='text-xl text-[#001524] text-center'>{movie.title}</h3>
-                        <h4 className='text-xl text-[#001524] text-center'>{movie.release_date ? movie.release_date.substring(0, 4) : "-" }</h4>
+                <div className='info bg-[#ffecd1] rounded-b'>
+                    <div className='header'>
+                        <h3 className='text-xl text-[#001524] text-center sm:w-[300px] md:w-[400px]'>{movie.title}</h3>
+                        <h4 className='text-xl text-[#001524] text-center sm:w-[300px] md:w-[400px]'>{movie.release_date ? movie.release_date.substring(0, 4) : "-" }</h4>
                     </div>
-                    <div className='flex'>
-                        <button className='absolute rounded bg-teal-600 w-[100px] h-[40px] md:ml-[80px] md:mr-[25px] mt-2 mb-6'>Play</button> 
+                    <div className='flex border-x'>
+                        <button className='absolute rounded bg-teal-600 text-[#001524] w-[100px] h-[40px] md:ml-[80px] md:mr-[25px] mt-2 mb-6 hover:text-[#ffecd1] hover:bg-transparent hover:border duration-300'>Play</button> 
                     </div>
                     <div>
-                        <button className='absolute rounded border w-[100px] h-[40px] md:ml-[25px] md:mr-[50px] mt-2 mb-6 sm:ml-[50px]'>Add to List</button>
+                        <button className='absolute rounded border w-[100px] h-[40px] md:ml-[25px] md:mr-[50px] mt-2 mb-6 sm:ml-[50px] hover:bg-teal-600 hover:border-none duration-300'>Add to List</button>
                     </div>
                 </div>
             </div>

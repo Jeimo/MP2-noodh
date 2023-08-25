@@ -15,7 +15,7 @@ const PricingPlans = ({ option }) => {
                 </li>
                 ))}
             </ul>
-            <button className="bg-teal-600 text-[#ffecd1] font-bold text-xl py-2 px-4 rounded w-full">
+            <button className="bg-teal-600 text-[#ffecd1] font-bold text-xl py-2 px-4 rounded w-full hover:bg-[#001524]">
                 Select Plan
             </button>
         </div>
