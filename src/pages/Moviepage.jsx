@@ -1,7 +1,7 @@
 import React from 'react'
-import Row from '../components/Row'
+import Row from '../components/Movie/Row'
 import requests from '../Requests'
-import Main from '../components/Main'
+import Main from '../components/Movie/Main'
 
 const Moviepage = () => {
     return (

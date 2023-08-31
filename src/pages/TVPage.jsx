@@ -1,7 +1,7 @@
 import React from 'react'
-import TVShows from '../components/TVShows'
+import TVShows from '../components/TV/TVShows'
 import TVrequests from '../TVRequests'
-import TVRow from '../components/TVRow'
+import TVRow from '../components/TV/TVRow'
 
 
 const TVPage = () => {

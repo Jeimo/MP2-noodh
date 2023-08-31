@@ -7,36 +7,49 @@ import TVPage from "./pages/TVPage";
 import SearchPage from "./pages/SearchPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
-import Authenticate from "./components/Authenticate";
+import { AuthContextProvider } from "./context/AuthContext";
+import WatchlistPage from "./pages/WatchlistPage";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 export default function App() {
   return (
-    <div className="page-container flex flex-col min-h-full">
-      <div className="content-wrap flex-1">
+    <>
+      <AuthContextProvider>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/movies' element={
-              <Authenticate>
-                <Moviepage />
-              </Authenticate>
-          }/>
-          <Route path='/tv' element={
-              <Authenticate>
-                <TVPage />
-              </Authenticate>
-          }/>
-          <Route path='/search' element={
-              <Authenticate>
+            <Route path='/' element={
+              <Home />} 
+            />
+
+            <Route path='/movies' element={
+              <Moviepage />
+            }/>
+
+            <Route path='/tv' element={
+              <TVPage />
+            }/>
+
+            <Route path='/search' element={
+              <ProtectedRoute>
                 <SearchPage />
-              </Authenticate>
-          }/>
-          <Route path='/login' element={<LoginPage />} />
-          <Route path='/signup' element={<SignupPage />} />
+              </ProtectedRoute>
+            }/>
+
+            <Route path='/login' element={
+              <LoginPage />}
+            />
+            <Route path='/signup' element={
+              <SignupPage />}
+            />
+            <Route path='/watchlist' element={
+              <ProtectedRoute>
+                <WatchlistPage />
+              </ProtectedRoute>}
+            />
         </Routes>
-      </div>
+      </AuthContextProvider>
         <Footer />
-    </div>
+    </>
   );
 }
 

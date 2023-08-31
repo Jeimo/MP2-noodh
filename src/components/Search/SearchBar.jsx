@@ -24,23 +24,23 @@ const SearchBar = () => {
 
     return (
         <>
-            <div className='mt-[100px] text-center'>
+            <div className='mt-[50px] text-center'>
                 <input
                     type="text"
-                    placeholder="Search movies"
-                    className=" w-[600px] h-[40px] px-4 rounded focus:outline-none bg-transparent text-[#ffecd1] border"
+                    placeholder="Search here..."
+                    className="w-[550px] h-[40px] px-4 rounded focus:outline-none bg-transparent text-[#ffecd1] border"
                     value={query}
                     onChange={onChange}
                 />
                 <div>
                     {results.length > 0 && (
-                        <ul className='results'>
+                        <ul className='results grid sm:grid-cols-1 lg:grid-cols-3'>
                             {results.map((movie) => (
-                                <li key={movie.id}>
+                                <li key={movie.id}
+                                    >
                                     <ResultsCard movie={movie} />
                                 </li>
                             ))}
-
                         </ul>
                     )}
                 </div>

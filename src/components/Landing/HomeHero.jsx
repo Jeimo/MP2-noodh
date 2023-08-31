@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import Hero from './Hero'
+
 
 const HomeHero = () => {
     const [movies, setMovies] = useState([])
@@ -12,7 +12,7 @@ const HomeHero = () => {
             setMovies(response.data.results)
         })
     }, [])
-console.log(movies);
+// console.log(movies);
 
     return (
         <>
@@ -21,7 +21,6 @@ console.log(movies);
                     <div className='absolute w-full h-full bg-[#001524] opacity-60'></div>
                     <img className='w-full h-full object-cover' src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} />
                 </div>
-                
             </div>
         </>
     )

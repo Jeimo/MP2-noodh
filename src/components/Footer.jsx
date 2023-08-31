@@ -9,12 +9,16 @@ const Footer = () => {
             <div className='md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#001524] pt-2'>
                 <h1 className='lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5'><span className='text-teal-400'>Questions? </span>Send us an email.</h1>
                 <div className='flex'>
-                    <input type='email' placeholder='Enter your name here' className='text-[#ffecd1] bg-transparent border sm:w-full md:w-75 sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none' />
-                    <input type='textarea' placeholder='Enter your concern here' className='text-[#ffecd1] bg-transparent border sm:w-full md:w-75 sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none' />
-                    <button className='bg-teal-600 hover:bg-[#ffecd1] text-[#ffecd1] hover:text-[#001524] duration-300 px-5 py-2.5 rounded-md md:w-auto sm:w-[300px] h-[48px]'>Send</button>
+                    <input type='email'
+                            placeholder='Enter your name here'
+                            className='text-[#ffecd1] bg-transparent border sm:w-full md:w-[400px] mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none' />
+                    <input type='textarea'
+                            placeholder='Enter your concern here'
+                            className='text-[#ffecd1] bg-transparent border sm:w-full md:w-[400px]  mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none' />
                 </div>
+                <button className='bg-teal-600 hover:bg-[#ffecd1] text-[#ffecd1] hover:text-[#001524] duration-300 px-5 py-2.5 rounded-md md:w-auto sm:w-full h-[48px]'>Send</button>
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 sm:px-8 px-5 py-10 border-b'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 sm:px-8 px-5 py-10 border-b'>
                 <h1 className='text-5xl cursor-pointer my-auto ml-5 font-semibold'>noödh.</h1>
                 <div className='grid grid-cols-2'>
                     <div className='flex flex-col'>

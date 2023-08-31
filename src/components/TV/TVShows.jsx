@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import TVrequests from '../TVRequests'
+import TVrequests from '../../TVRequests'
 
 
 const TVShows = () => {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import requests from '../Requests'
+import requests from '../../Requests'
 import axios from 'axios'
 
 
