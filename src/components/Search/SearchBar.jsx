@@ -24,11 +24,11 @@ const SearchBar = () => {
 
     return (
         <>
-            <div className='mt-[50px] text-center'>
+            <div className='mt-[50px] flex flex-col items-center justify-center'>
                 <input
                     type="text"
                     placeholder="Search here..."
-                    className="w-[550px] h-[40px] px-4 rounded focus:outline-none bg-transparent text-[#ffecd1] border"
+                    className="w-[350px] md:w-[550px] h-[40px] mx-10 pl-2 rounded focus:outline-none bg-transparent text-[#ffecd1] border"
                     value={query}
                     onChange={onChange}
                 />

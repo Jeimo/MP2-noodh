@@ -91,13 +91,14 @@ const Navbar = () => {
                 { user?.email? (
                 <div className='flex py-8 justify-around'>
                     <NavLink to='/watch'><button className='bg-teal-600 text-[#001524] font-semibold text-lg px-6 py-2 rounded cursor-pointer mb-5 hover:bg-[#ffecd1] '>Watchlist</button></NavLink>
-                    <NavLink to='/signup'><button className='bg-teal-600 text-[#001524] font-semibold text-lg px-6 py-2 rounded cursor-pointer hover:bg-[#ffecd1] '>Logout</button></NavLink>
+                    <button 
+                        onClick={handleLogout}
+                        className='bg-teal-600 text-[#001524] font-semibold text-lg h-11 px-6 py-2 rounded cursor-pointer hover:bg-[#ffecd1] '>Logout</button>
                 </div> ) : (
                 <div className='flex py-8 justify-around'>
                     <NavLink to='/login'><button className='bg-teal-600 text-[#001524] font-semibold text-lg px-6 py-2 rounded cursor-pointer mb-5 hover:bg-[#ffecd1] '>Sign In</button></NavLink>
-                    <button
-                        onClick={handleLogout}
-                        className='bg-teal-600 text-[#001524] font-semibold text-lg px-6 py-2 rounded cursor-pointer hover:bg-[#ffecd1] '>Sign Up</button>
+                    <NavLink to='/signup'><button
+                        className='bg-teal-600 text-[#001524] font-semibold text-lg px-6 py-2 rounded cursor-pointer hover:bg-[#ffecd1] '>Sign Up</button></NavLink>
                 </div> )}
                 <div className='flex justify-between my-3'>
                     <FaFacebook className='icon text-[#ffecd1]'/>
