@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MP2-noodh/static/css/main.711445e6.css",
+    "main.js": "/MP2-noodh/static/js/main.de11e8c4.js",
+    "index.html": "/MP2-noodh/index.html",
+    "main.711445e6.css.map": "/MP2-noodh/static/css/main.711445e6.css.map",
+    "main.de11e8c4.js.map": "/MP2-noodh/static/js/main.de11e8c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.711445e6.css",
+    "static/js/main.de11e8c4.js"
+  ]
+}
