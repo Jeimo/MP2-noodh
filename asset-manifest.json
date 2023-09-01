@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/MP2-noodh/static/css/main.711445e6.css",
-    "main.js": "/MP2-noodh/static/js/main.de11e8c4.js",
+    "main.css": "/MP2-noodh/static/css/main.255e95fd.css",
+    "main.js": "/MP2-noodh/static/js/main.d97955fb.js",
     "index.html": "/MP2-noodh/index.html",
-    "main.711445e6.css.map": "/MP2-noodh/static/css/main.711445e6.css.map",
-    "main.de11e8c4.js.map": "/MP2-noodh/static/js/main.de11e8c4.js.map"
+    "main.255e95fd.css.map": "/MP2-noodh/static/css/main.255e95fd.css.map",
+    "main.d97955fb.js.map": "/MP2-noodh/static/js/main.d97955fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.711445e6.css",
-    "static/js/main.de11e8c4.js"
+    "static/css/main.255e95fd.css",
+    "static/js/main.d97955fb.js"
   ]
 }
