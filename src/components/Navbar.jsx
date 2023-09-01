@@ -90,7 +90,7 @@ const Navbar = () => {
                 {/* Ternary for signin/signup */}
                 { user?.email? (
                 <div className='flex py-8 justify-around'>
-                    <NavLink to='/watch'><button className='bg-teal-600 text-[#001524] font-semibold text-lg px-6 py-2 rounded cursor-pointer mb-5 hover:bg-[#ffecd1] '>Watchlist</button></NavLink>
+                    <NavLink to='/watchlist'><button className='bg-teal-600 text-[#001524] font-semibold text-lg px-6 py-2 rounded cursor-pointer mb-5 hover:bg-[#ffecd1] '>Watchlist</button></NavLink>
                     <button 
                         onClick={handleLogout}
                         className='bg-teal-600 text-[#001524] font-semibold text-lg h-11 px-6 py-2 rounded cursor-pointer hover:bg-[#ffecd1] '>Logout</button>
