@@ -35,7 +35,7 @@ const Navbar = () => {
 
     return (
         <div className='flex items-certer justify-between p-4 z-[100] w-full absolute'>
-            <NavLink to='/'><h1 className='text-4xl font-bold cursor-pointer ml-[20px] md:ml-[150px]'>noödh.</h1></NavLink>
+            <NavLink to='/'><h1 className='text-4xl font-bold cursor-pointer ml-[20px] lg:ml-[150px]' onClick={handleNav}>noödh.</h1></NavLink>
             <ul className='hidden lg:flex ml-20'>
                 {
                     MenuLink.map((menu, i) => (
@@ -53,13 +53,13 @@ const Navbar = () => {
             </ul>
             {/* Ternary for signin/signup */}
             { user?.email? (
-            <div className='hidden md:flex'>
+            <div className='hidden md:flex mr-[20px] lg:mr-[150px]'>
                 <NavLink to='/watchlist'><button className='mr-4 px-4 border rounded h-10'>Watchlist</button></NavLink>
                 <button
                     onClick={handleLogout}
                     className='bg-teal-600 h-10 px-6 py-2 rounded cursor-pointer'>Logout</button>
             </div> ) : (
-            <div className='hidden md:flex mr-[150px]'>
+            <div className='hidden md:flex mr-[20px] lg:mr-[150px]'>
                 <NavLink to='/login'><button className='mr-4 px-4 border rounded h-10'>Sign In</button></NavLink>
                 <NavLink to='/signup'><button className='bg-teal-600 px-6 py-2 rounded cursor-pointer'>Sign Up</button></NavLink>
             </div> )}
