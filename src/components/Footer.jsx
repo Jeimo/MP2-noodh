@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#001524] text-[#ffecd1] relative mt-5 border-t">
+        <footer className="bg-gradient-to-t from-[#001524] to-teal-900 text-[#ffecd1] relative mt-5">
             <div className='grid grid-cols-1 lg:grid-cols-2 px-5 py-10'>
                 <h1 className='text-5xl cursor-pointer font-semibold ml-[20px] lg:ml-[150px]'>noödh.</h1>
                 <div>
@@ -16,7 +16,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='md:flex md:justify-between md:items-center px-2 pt-2 bg-[#001524] mb-5'>
+            <div className='md:flex md:justify-between md:items-center px-2 pt-2 mb-5'>
                 <h1 className='lg:text-4xl text-3xl w-full md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5 ml-[15px] lg:ml-[150px]'><span className='text-teal-400'>Questions? </span>Send us an email.</h1>
                 <div className='w-[800px]'>
                     <input type='textarea'

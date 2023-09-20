@@ -35,7 +35,7 @@ const Navbar = () => {
 
     return (
         <div className='flex items-certer justify-between p-4 z-[100] w-full absolute'>
-            <NavLink to='/'><h1 className='text-4xl font-bold cursor-pointer ml-[20px] lg:ml-[150px]' onClick={handleNav}>noödh.</h1></NavLink>
+            <NavLink to='/'><h1 className='text-4xl font-bold cursor-pointer ml-[20px] lg:ml-[150px]'>noödh.</h1></NavLink>
             <ul className='hidden lg:flex ml-20'>
                 {
                     MenuLink.map((menu, i) => (

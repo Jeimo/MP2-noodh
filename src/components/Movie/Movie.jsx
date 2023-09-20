@@ -41,7 +41,7 @@ const Movie = ({item}) => {
                             {showModal ? (
                             <>
                             <div className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-                                <div className="relative my-6 mx-auto w-[350px] md:w-[800px]">
+                                <div className="relative my-6 mx-auto w-[400px] md:w-[800px]">
                                 {/*content*/}
                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-[#ffecd1] outline-none focus:outline-none">
                                     {/*header*/}
@@ -57,35 +57,33 @@ const Movie = ({item}) => {
                                     </div>
                                     {/*body*/}
                                     <div className="relative p-6 flex-auto h-auto">
-                                    <p className="my-2 text-[#001524] text-lg whitespace-break-spaces">
-                                        Overview:<br/>
-                                        {item?.overview}
-                                    </p>
-                                    <p className="my-4 text-[#001524] text-lg">
-                                        Date released:<br/>
-                                        {item?.release_date}
-                                    </p>
-                                    <p className="my-4 text-[#001524] text-lg">
-                                        Rating:<br/>
-                                        {item?.vote_average}
-                                    </p>
+                                        <p className="my-2 text-[#001524] text-lg whitespace-break-spaces">
+                                            Overview:<br/>
+                                            {item?.overview}
+                                        </p>
+                                        <p className="my-4 text-[#001524] text-lg">
+                                            Date released:<br/>
+                                            {item.release_date}
+                                        </p>
+                                        <p className="my-4 text-[#001524] text-lg">
+                                            Rating:<br/>
+                                            {item?.vote_average}
+                                        </p>
                                     </div>
                                     {/*footer*/}
                                     <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-                                    <button
-                                        className="bg-teal-600 text-[#ffecd1] hover:text-[#001524] active:bg-emerald-600 text-xl px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                                        type="button"
-                                        onClick={() => setShowModal(false)}
-                                    >
-                                        Close
-                                    </button>
-                                    <button
-                                        className="bg-teal-600 text-[#ffecd1] hover:text-[#001524] active:bg-emerald-600 text-xl px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                                        type="button"
-                                        onClick={() => setShowModal(false)}
-                                    >
-                                        Play
-                                    </button>
+                                        <button
+                                            className="bg-teal-600 text-[#ffecd1] hover:text-[#001524] active:bg-emerald-600 text-xl px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                            type="button"
+                                            onClick={() => setShowModal(false)}>
+                                            Close
+                                        </button>
+                                        <button
+                                            className="bg-teal-600 text-[#ffecd1] hover:text-[#001524] active:bg-emerald-600 text-xl px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                            type="button"
+                                            onClick={() => setShowModal(false)}>
+                                            Play
+                                        </button>
                                     </div>
                                 </div>
                                 </div>
@@ -106,7 +104,6 @@ const Movie = ({item}) => {
                         </div>
                     </div>   
                 </div>
-                
             </div>
         </div>
 
