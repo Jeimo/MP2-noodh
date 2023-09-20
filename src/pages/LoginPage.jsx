@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import HomeHero from '../components/Landing/HomeHero'
 import { Link, useNavigate } from 'react-router-dom'
 import { UserAuth } from '../context/AuthContext';
-import { AiFillFacebook } from 'react-icons/ai'
-import { FcGoogle } from 'react-icons/fc'
 
 const LoginPage = () => {
     const [email, setEmail] = useState('');
@@ -31,12 +29,8 @@ const LoginPage = () => {
                     onSubmit={eventSubmit}
                     className='max-w-[400px] w-full mx-auto bg-[#001524] rounded-xl border p-8'>
                     <h2 className='text-4xl font-bold text-center py-4'>noödh.</h2>
-                    <p className='text-center border'>Sign-in</p>
-                    {error ? <p className='mt-2 p-2 h-10 text-center bg-red-400 text-red-950'>{error}</p> : null}
-                    <div className='flex justify-between py-5'>
-                        <p className='border shadow-md shadow-teal-400 hover:shadow-lg hover:shadow-teal-400 px-6 py-2 relative flex items-center'><AiFillFacebook className='mr-2' /> Facebook</p>
-                        <p className='border shadow-md shadow-teal-400 hover:shadow-lg hover:shadow-teal-400 px-6 py-2 relative flex items-center'><FcGoogle className='mr-2' /> Google</p>
-                    </div>
+                    <p className='text-center border mb-3'>Sign-in</p>
+                    {error ? <p className='mt-2 p-2 h-10 text-center bg-red-400 text-red-950'>User not found!</p> : null}
                     <div className='flex flex-col mb-4'>
                         <label>Email</label>
                         <input

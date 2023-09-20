@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import { UserAuth } from '../context/AuthContext';
 import { db } from '../firebase';
 import { updateDoc, doc, onSnapshot } from 'firebase/firestore';
-import { AiOutlineClose } from 'react-icons/ai';
 
 const Watchlist = () => {
     const [movies, setMovies] = useState([]);
