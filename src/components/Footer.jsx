@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="bg-gradient-to-t from-[#001524] to-teal-900 text-[#ffecd1] relative mt-5">
+        <footer className="bg-gradient-to-t from-[#001524] to-teal-900 text-[#ffecd1] relative pt-5">
             <div className='grid grid-cols-1 lg:grid-cols-2 px-5 py-10'>
                 <h1 className='text-5xl cursor-pointer font-semibold ml-[20px] lg:ml-[150px]'>noödh.</h1>
                 <div>

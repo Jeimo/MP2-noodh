@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const PricingPlans = ({ option }) => {
     return (
@@ -15,9 +16,9 @@ const PricingPlans = ({ option }) => {
                 </li>
                 ))}
             </ul>
-            <button className="bg-teal-600 text-[#ffecd1] font-bold text-xl py-2 px-4 rounded w-full hover:bg-[#001524]">
+            <NavLink to='/signup'><button className="bg-teal-600 text-[#ffecd1] font-bold text-xl py-2 px-4 rounded w-full hover:bg-[#001524]">
                 Select Plan
-            </button>
+            </button></NavLink>
         </div>
     );
 };
